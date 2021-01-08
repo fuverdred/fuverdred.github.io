@@ -1,3 +1,13 @@
+$bgcolour: lightblue;
+$textcolour: darkblue;
+$fontsize: 18px;
+
+body {
+  background-color: $bgcolour;
+  color: $textcolour;
+  font-size: $fontsize;
+}
+
 .current {
   color: green;
 }
