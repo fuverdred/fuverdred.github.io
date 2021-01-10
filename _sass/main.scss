@@ -1,4 +1,4 @@
-$bgcolour: black;
+$bgcolour: lightblue;
 $textcolour: darkblue;
 $fontsize: 18px;
 
@@ -20,6 +20,11 @@ p {
 #test {
   text-align: center;
   color: green;
+}
+
+#name {
+  text-align: center;
+  color: white;
 }
 
 #title-holder {
