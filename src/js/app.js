@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "value": 30,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 600
         }
       },
       "color": {
@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "size": {
-        "value": 10,
-        "random": false,
+        "value": 15,
+        "random": true,
         "anim": {
           "enable": false,
-          "speed": 19.18081918081918,
+          "speed": 15,
           "size_min": 0.1,
           "sync": false
         }
@@ -66,9 +66,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "out_mode": "out",
         "bounce": false,
         "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
+          "enable": true,
+          "rotateX": 2000,
+          "rotateY": 2000
         }
       },
       nb: 80
