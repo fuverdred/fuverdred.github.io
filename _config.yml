@@ -1,7 +1,7 @@
 # Site settings
 title: Fred Cook
 description: Fred Cook's website
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "fuverdred.gitub.io"
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
