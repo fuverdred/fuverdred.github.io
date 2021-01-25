@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "bounce": false,
         "attract": {
           "enable": true,
-          "rotateX": 2000,
-          "rotateY": 2000
+          "rotateX": 4000,
+          "rotateY": 4000
         }
       },
       nb: 80
