@@ -13,6 +13,8 @@
   background-color: #fff
 }
 
+
+
 .CV_header {
   padding: 0;
   .name_container {
@@ -33,16 +35,36 @@
   }
 }
 
-.CV_timespan{
-  float: right;
-  background-color: black;
-  width: 6cm;
-  height: 1cm;
-  
+.CV_entry {
+  div {
+    width: 100%;
+    float: left;
+    margin-top: 5px;
+  }
+  h2 {
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+  }
   h4 {
-    padding: 0;
-    margin: 0;
+    float: left;
+    margin: 0.1cm;
+    padding: 0.1cm;
+  }
+  .CV_entry_timespan {
+    background-color: black;
     color: white;
+    float: right;
+    text-align: right;
+    width: 3cm;
+  }
+  .CV_entry_details {
+    padding-right: 0.5cm;
+    padding-left: 0.5cm;
+  }
+  li {
+    list-style-position: inside;
+    padding-left: 1cm;
+    padding-right: 1cm;
   }
 
 }
