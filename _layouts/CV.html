@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=1280, initial-scale=1">
-		<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>CV</title>
-	</head>
-	<body class=CV_background>
+  {% include head.html %}
+	<body style="background-color:grey;">
     {% include CV.html %}
 	</body>
 </html>

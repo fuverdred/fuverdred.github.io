@@ -1,86 +1,63 @@
-<div class="CV_canvas">
-  <div class="CV_header">
-    <div class="name_container">
-      <h1>{{site.username}}</h1>
-    </div>
-    <div>
-      <p>fred@fredcook.co.uk</p>
-      <p><a href="https://github.com/fuverdred">github/fuverdred</a></p>
-    </div>
-  </div>
+<div class="CV_page">
+  <h1 class="name">Fred Cook</h1>
+  <p><i class="icon fa fa-envelope"></i> fred@fredcook.co.uk</p>
+  <p><i class="icon fa fa-github"></i> github.com/fuverdred</p>
 
-  <div class="CV_entry">
-    <h2>Education</h2>
-    <hr style="height:3px;background-color:black">
-    <div>
-      <h4>PhD Physics <i>University of Bristol</i></h4>
-      <h4 class="CV_entry_timespan">2016-Present</h4>
-    </div>
+  <hr style="height:3px">
 
-    <div class="CV_entry_details">
-      Thesis submitted December 2020, awaiting viva date.<br>
-      Thesis title: <i>Development of Apparatus for ice nucleation studies</i>.
-      <br>
-      The fundamentals of what makes a good ice nucleator remain poorly understood at the nanoscale.
-      In my PhD I developed three experimental methods:
-      <li>A novel way of automating a standard experimental technique</li>
-      <li>An updated version of an automated lag time apparatus (ALTA) for ice nucleation studies.</li>
-      <li>An environmental chamber for freezing acoustically levitated water droplets.</li>
-      Some relevant highlights of my PhD work include:
-      <li>A program for detecting freezing droplets from a series of images, including tracking the
+  <p>Brief description about me here. Orange lad is the one true king, lad is love, lad is life.</p>
+
+  <h3>Education</h3>
+  <hr>
+
+  <h4><b>PhD Physics </b><i>University of Bristol</i></h4>
+  <p class=CV_duration>2016-Present</p>
+  Submitted December 2020, awaiting viva date.<br>
+  Thesis title: <i>Development of apparatus for ice nucleation studies.</i><br>
+  The fundamentals of what makes a good ice nucleator remain poorly understood at the nanoscale.
+In my PhD I developed three experimental methods:
+<li>A novel way of automating a standard experimental technique (<a href="https://amt.copernicus.org/articles/13/2785/2020/">published</a>).</li>
+<li>An updated version of an automated lag time apparatus (<a href="https://aip.scitation.org/doi/10.1063/1.1145586">ALTA</a>) for ice nucleation studies.</li>
+<li>An environmental chamber for freezing acoustically levitated water droplets.</li>
+<p>Some relevant highlights of my PhD work include:</p>
+<li>A program for detecting freezing droplets from a series of images, including tracking the
 movement of the droplets, written in Python using OpenCV.</li>
-      <li>Reverse engineering the instruction set for a picolitre droplet printer, allowing a custom labVIEW
+<li>Reverse engineering the instruction set for a picolitre droplet printer, allowing a custom labVIEW
 program integrated with an X-Y translation stage to be written.</li>
-      <li>Python scripts for cleaning, analysing and graphing data using standard scientific libraries
+<li>Python scripts for cleaning, analysing and graphing data using standard scientific libraries
 (NumPy, SciPy and Matplotlib).</li>
-      <li>Programmed microcontrollers (Arduino and pyBoard) to read peripherals and control experi-
-ments.</li>
-    </div>
+<li>Programmed microcontrollers (Arduino and pyBoard) to read peripherals and control
+  experiments.</li>
 
-      <div>
-        <h4>MSci Physics <i>University of Bristol</i></h4>
-        <h4 class="CV_entry_timespan">2012-2016</h4>
-      </div>
-      <div class="CV_entry_details">
-        First class honours.
-      </div>
+  <h4><strong>MSci Physics </strong><i>University of Bristol</i></h4>
+  <p class=CV_duration>2012-2016</p>
+  <p>First class honours.</p>
 
-      <div>
-        <h4>Alleyn's School</h4>
-        <h4 class="CV_entry_timespan">2005-2012</h4>
-      </div>
-      <div class="CV_entry_details">
-        A-Levels: Physics A*, Maths A*, Economics A (AS-level Politics A)<br>
-        GCSEs: 6A*, 3A, 1B
-      </div>
+  <h4><strong>Alleyn's School</strong></h4>
+  <p class=CV_duration>2005-2012</p>
+  <p>A-levels: Physics A*, Maths A*, Economics A (AS-level Politics A)<br>
+  GCSEs: 6A*, 3A, 1B</p>
 
+  <h3>Software Development Skills</h3>
+  <hr>
+  <div style="width:100%">
+  <div class="col-15">
+    <p>Python 3</p>
   </div>
-
-  <div class="CV_entry">
-    <h2>Publications</h2>
-    <hr style="height:3px;background-color:black">
-    <li>Cook et al., A pyroelectric thermal sensor for automated ice nucleation detection.
-(2020) Atmos. Meas. Tech. Disc. 13, 2785–2795</li>
-    <li>Cook et al., An updated automated lag-time apparatus for ice nucleation studies.
-Awaiting submission.</li>
-
-  <div class="CV_entry">
-    <h2>Software Development Skills</h2>
-    <hr style="height:3px;background-color:black">
-    <table>
-      <tr>
-        <td width="100">Python 3</td>
-        <td>Four years of experience.<br>
+  <div class="col-85">
+    <p>Four years of experience.<br>
 Well versed in the standard scientific libraries: NumPy, SciPy, Matplotlib.
 Personal projects include web-scraping scripts, a tool for creating themed cross-
-words and a device for monitoring and controlling the pH of soil.</td>
-      </tr>
-      <tr>
-        <td width="100">misc.</td>
-        <td>Experience programming in C, knowledge of git and Latex. Excellent CSS and HTML skills</td>
-      </tr>
-    </table>
+words and a device for monitoring and controlling the pH of soil.</p>
   </div>
-
+  </div>
+  <div style="width:100%">
+    <div class="col-15">
+      <p>Other</p>
+    </div>
+    <div class="col-85">
+      <p>Experience programming in C, knowledge of git and <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></p>
+    </div>
+  </div>
 
 </div>

@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "size": {
-        "value": 15,
+        "value": 25,
         "random": true,
         "anim": {
           "enable": false,
@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       },
       "line_linked": {
-        "enable": true,
+        "enable": false,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0,
         "width": 1
       },
       "move": {

@@ -1,78 +1,106 @@
-.CV_background {
-  background-color: #b0b6bf
-}
-
-.CV_canvas {
-  margin-top: 1cm;
+.CV_page {
+  color: black;
+  font-size: 80%;
+  box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: border-box;
-  padding: 0.6in;
-  width: 8.5in;
-  height: 12in;
-  background-color: #fff
+  max-width: 21cm;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: white;
 }
 
-
-
-.CV_header {
+.name {
   padding: 0;
-  .name_container {
-    float: right;
-    width: 7.9in;
-  }
-  div {
-    width: auto;
-  }
-  h1 {
-    float: inherit;
-    margin: 0;
-    padding: 0;
-  }
-  p {
-    margin: 0;
-    padding: 0;
-  }
+  text-align: right;
 }
 
-.CV_entry {
-  div {
-    width: 100%;
-    float: left;
-    margin-top: 5px;
-  }
-  h2 {
-    margin-top: 0.1cm;
-    margin-bottom: 0.1cm;
-  }
-  h4 {
-    float: left;
-    margin: 0.1cm;
-    padding: 0.1cm;
-  }
-  .CV_entry_timespan {
-    background-color: black;
-    color: white;
+.CV_page > h1, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+.CV_page > h3 {
+  margin-top: 1px;
+  margin-bottom: 0;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
+
+.CV_duration {
+  color: white;
+  background-color: black;
+  width: 2.5cm;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+li {
+  text-align: justify;
+  padding-left: 5px;
+  padding-right: 5px;
+  list-style-position: inside;
+}
+
+b {
+  font-weight: 900;
+}
+
+.col-15 {
+  width: 15%;
+  background-color: yellow;
+  float: left;
+}
+
+.col-85 {
+  width: 85%;
+  background-color: red;
+  float: right;
+}
+
+.latex sup {
+  text-transform: uppercase;
+}
+
+.latex sub {
+  vertical-align: -0.5ex;
+  margin-left: -0.1667em;
+  margin-right: -0.125em;
+}
+
+.latex, .latex sub {
+  font-size: 1em;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: 0.15em;
+  margin-left: -0.36em;
+  margin-right: -0.15em;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For big phones and up: */
+
+  .CV_duration {
     float: right;
     text-align: right;
-    width: 3cm;
   }
-  .CV_entry_details {
-    padding-right: 0.5cm;
-    padding-left: 0.5cm;
-  }
+
   li {
-    list-style-position: inside;
-    padding-left: 1cm;
-    padding-right: 1cm;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-
 }
 
-td {
-    vertical-align: text-top;
-}
-
-.CV_label {
-  width: 4cm;
+@media only screen and (min-width: 21cm){
+  .CV_page {
+    height: 29.7cm;
+    padding: $CV_margin;
+  }
 }
