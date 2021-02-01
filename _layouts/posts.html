@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+	<body>
+    <section id="projects">
+      {% for post in site.posts %}
+      {% assign remainder = forloop.index | modulo: 2 %}
+
+      {% if remainder == 1 %}
+        {% assign image_class = "images-right" %}
+        {% assign content_class = "contents" %}
+      {% else %}
+        {% assign image_class = "images-left" %}
+        {% assign content_class = "contents-right" %}
+      {% endif %}
+
+        <div class="user-projects">
+          <div class={{image_class}}>
+            <img src="{{post.image | prepend:site.baseurl}}" >
+          </div>
+          <div class={{content_class}}>
+            <h3>{{post.title}}</h3>
+            <p>{{ post.excerpt }}</p>
+            <a class="project-link" href="{{post.url}}">More</a>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+	</body>
+</html>
