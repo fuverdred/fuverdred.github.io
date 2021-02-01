@@ -1,0 +1,12 @@
+.menu_bar {
+  background-color: $main;
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  h1 {
+    float: right;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: right;
+  }
+}

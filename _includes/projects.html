@@ -1,29 +1,27 @@
 <div class="user-details">
   <h1> Featured Projects </h1>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+
+
+{% for post in site.posts limit:2 %}
+{% assign remainder = forloop.index | modulo: 2 %}
+
+{% if remainder == 1 %}
+  {% assign image_class = "images-right" %}
+  {% assign content_class = "contents" %}
+{% else %}
+  {% assign image_class = "images-left" %}
+  {% assign content_class = "contents-right" %}
+{% endif %}
+
+  <div class="user-projects">
+    <div class={{image_class}}>
+      <img src="{{post.image | prepend:site.baseurl}}" >
+    </div>
+    <div class={{content_class}}>
+      <h3>{{post.title}}</h3>
+      <p>{{ post.excerpt }}</p>
+      <a class="project-link" href="{{post.url}}">Check it out</a>
+    </div>
   </div>
-  <div class="contents">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Project Title </h3>
-    <ul>
-      <li> Featured Skills</li>
-    </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
-  </div>
-</div>
+{% endfor %}
