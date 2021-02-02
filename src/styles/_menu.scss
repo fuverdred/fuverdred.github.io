@@ -1,12 +1,26 @@
 .menu_bar {
   background-color: $main;
-  margin-bottom: 50px;
-  overflow: hidden;
+  margin-bottom: 0;
+  overflow:hidden;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
 
-  h1 {
-    float: right;
-    padding-right: 50px;
-    padding-left: 50px;
-    text-align: right;
-  }
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.btn-group h2 {
+  background-color: $main; /* Green background */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: inline;
+}
+
+/* Add a background color on hover */
+.btn-group h2:hover {
+  background-color: $sec;
 }

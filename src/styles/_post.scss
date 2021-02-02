@@ -1,0 +1,31 @@
+.post_body {
+  background-color: white;
+  max-width: $A4_width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+}
+
+img {
+  max-width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post_image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: $cut) {
+  /* For big phones and up: */
+  .post_body {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+}
