@@ -1,0 +1,24 @@
+.xw_grid {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  border-collapse: collapse;
+
+  tr, td {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+  }
+
+  div {
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  .xw_dark {
+    background-color: black;
+  }
+}
