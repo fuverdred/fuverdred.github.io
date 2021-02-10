@@ -27,4 +27,4 @@ We will refer to these as the theme dictionary from now on. How many can be fitt
 
 The first question is which grid? It is tempting to think a custom grid could be made for any given set to optimise the number of fitted theme words.
 
-{% include crossword_grids/grid_1.html %}
+{% include crossword_grids/grid_11.html %}
