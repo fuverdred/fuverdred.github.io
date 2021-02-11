@@ -1,5 +1,6 @@
 .xw_grid {
   padding: 0;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: auto;
@@ -20,5 +21,14 @@
 
   .xw_dark {
     background-color: black;
+  }
+}
+
+@media only screen and (max-width: $cut2) {
+  .xw_grid {
+    div {
+      width: 7px;
+      height: 7px;
+    }
   }
 }

@@ -25,15 +25,15 @@ We will refer to these as the theme dictionary from now on. How many can be fitt
 
 ### Grid Choice
 
-The first question is which grid? It is tempting to think a custom grid could be made for any given set to optimise the number of fitted theme words.
+The first question is which grid? It is tempting to think a custom grid could be made for any given set to optimise the number of fitted theme words. However, there are constraints on what a grid can look like. They must have some form of symmetry. In fact, there are ~60 standard grids the Guardian uses, four examples are shown below.
 
-
-<div class="images-left">
-{% include crossword_grids/grid_11.html %}
-</div>
-
-<div class="images-right">
-{% include crossword_grids/grid_12.html %}
-</div>
-
-However, there are constraints on what a grid can look like. They must have some form of symmetry. In fact, there are 32 standard grids the Guardian uses.
+<table>
+  <tr>
+    <td>{% include crossword_grids/grid_12.html %}</td>
+    <td>{% include crossword_grids/grid_11.html %}</td>
+  </tr>
+  <tr>
+    <td>{% include crossword_grids/grid_1.html %}</td>
+    <td>{% include crossword_grids/grid_2.html %}</td>
+  </tr>
+</table>
