@@ -47,3 +47,5 @@ Limiting ourselves to these ~60 grids, it makes sense to only consider grids whi
 | 8 | MILKYWAY, SNICKERS |
 | 11 | BOURNEVILLE |
 | 12 | DOUBLEDECKER |
+
+This is a test to see if gulp is needed to compile all files.
