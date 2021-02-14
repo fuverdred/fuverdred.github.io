@@ -2,7 +2,7 @@
 layout: post
 author: Fred Cook
 title: Crossword Theme Fitting
-image: /assets/img/crossword_filler/xw.png
+image: /assets/img/crossword_filler/Example.png
 ---
 
 It is common for the Guardian cryptic crossword to include a theme, sometimes clearly referred to, sometimes waiting to be discovered as the answers are filled in. For good examples see [Maskarade](https://www.theguardian.com/crosswords/crosswords+profile/maskarade). When I decided I wanted to set some themed crosswords I didn't fancy spending ages filling out a grid with theme words by hand, let alone checking that once a theme word was in place, the rest of the grid could still be filled. As I couldn't find a program to achieve this goal I wrote one.<br/><br/>
@@ -47,3 +47,6 @@ Limiting ourselves to these ~60 grids, it makes sense to only consider grids whi
 | 8 | MILKYWAY, SNICKERS |
 | 11 | BOURNEVILLE |
 | 12 | DOUBLEDECKER |
+
+A good match is
+{% include crossword_grids/grid_19.html %}
