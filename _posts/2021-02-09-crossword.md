@@ -48,5 +48,8 @@ Limiting ourselves to these ~60 grids, it makes sense to only consider grids whi
 | 11 | BOURNEVILLE |
 | 12 | DOUBLEDECKER |
 
+<<<<<<< HEAD
 A good match is
 {% include crossword_grids/grid_19.html %}
+=======
+>>>>>>> f9758da70ae597e991a417a5ed32bb413b2e98a9
