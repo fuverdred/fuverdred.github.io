@@ -58,14 +58,18 @@ How many possible ways are there to fit the theme dictionary into the grid? We c
 
 ```
 length |  words |    pos |  combs
--------+-------+-------+-------
+-------+--------+--------+--------
 4      |      5 |      6 |   1237
 5      |      6 |      8 |  28961
 6      |      6 |      4 |    517
 7      |      1 |      4 |      5
 8      |      2 |      4 |     17
--------+-------+-------+-------
+-------+--------+--------+--------
 TOTAL  | 1574318946365
 ```
 
-There are ~1.6 trillion possible permutations. Of course, many of these would be invalid due to letter clashes, however a first approach would require checking them to find these clashes. 
+There are ~1.6 trillion possible permutations. Of course, many of these would be invalid due to letter clashes, however a first approach would require checking them to find these clashes.
+
+### Fitting
+
+Programs to fill crossword grids can work by letter or by word. Working by letter makes sense when using a large dictionary, as individual letters at intersecting points determine the number of possible words which will fit. However, in the case of a small dictionary it makes the most sense to fit by word. Although, optimisations can be made by caching which letters have already been tried at intersecting positions.
