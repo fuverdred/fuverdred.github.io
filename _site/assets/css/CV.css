@@ -53,17 +53,17 @@ hr {
   color: white;
   text-align: center;
   border-radius: 8px;
-}
-
-.button-primary {
-  width: 50%;
+  max-width: 100px;
 }
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
+@media (min-width: 588px) {
+  .duration {
+    float: right;
+  }
 }
 
 /* Larger than tablet */
