@@ -5,7 +5,22 @@ body {
   background-color: white;
 }
 
-.dark-mode {
+.darkMode {
   background-color: black;
   color: white;
+}
+
+#switches {
+  font-size: 5;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#light-switch {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  height: auto;
+  border: 0;
 }

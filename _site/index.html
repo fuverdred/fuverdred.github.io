@@ -23,27 +23,31 @@
       <link rel="stylesheet" href="/assets/css/normalize.css">
       <link rel="stylesheet" href="/assets/css/skeleton.css">
       <link rel="stylesheet" href="/assets/css/custom.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <!-- Scripts
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <script src="/assets/javascript/darkmode.js"></script>
 
     </head>
 
 	<body>
-    <div class="section hero">
-      <div class="container">
-        <h1>Fred Cook</h1>
-        <h5>Graphic design is my passion</h5>
-        <a class="button button-primary" href="https://github.com/fuverdred">github</a>
-        <a class="button button-primary" href="/CV.html">CV</a>
-        <p>
-          Having just finished a PhD in physics I am looking to convert myself into a software developer. I have been programming for 8 years, initially in C before largely converting to Python 3 in 2016.
-        </p>
-        <button onclick="myFunction()">Toggle dark mode</button>
+    <div class="container">
+      <div id="switches">
+        <i id="light-symbol" class="fa fa-moon-o"></i>
+        <button id="light-switch" class="fa fa-toggle-off" aria-label="Toggle Dark Mode"></button>
       </div>
+      <div>
+        <h1>Fred Cook</h1>
+      </div>
+      <a class="button button-primary" href="https://github.com/fuverdred">github</a>
+      <a class="button button-primary" href="/CV.html">CV</a>
+      <p>
+        Having just finished a PhD in physics I am looking to convert myself into a software developer. I have been programming for 8 years, initially in C before largely converting to Python 3 in 2016.
+      </p>
     </div>
+    <script src="/assets/javascript/darkmode.js"></script>
+  </body>
 
 
 
