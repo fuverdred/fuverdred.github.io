@@ -1,7 +1,10 @@
 ---
 layout: post
-title: Automated Time-Lag Apparatus
+title: Automated Lag-Time Apparatus
 date: 2021-7-4
+github: https://github.com/fuverdred/ALTA
 ---
 
 ALTA is a device for freeze/thaw cycling samples. In my case, usually water and a suspension of K-feldspar, a mineral dust which is an efficient ice nucleator. It is a cheap and simple device to make, and requires no human interaction once it has been set going, making it an ideal device for ice nucleation experiments.
+
+![ALTA cross-section](https://raw.githubusercontent.com/fuverdred/ALTA/9ea97608547a6540db01ce2b88226d19de28fd11/images/ALTA_cross_section.svg)

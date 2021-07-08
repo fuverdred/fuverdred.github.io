@@ -38,6 +38,9 @@
       {% include header.html %}
       <div class="container">
         <h3>{{ page.title }}</h3>
+        {% if page.github %}
+        <a href="{{ page.github }}"><h4>Find the code here <i class="fa fa-github fa-lg" aria-hidden="true"></i></h4></a>
+        {% endif %}
         {{ content }}
       </div>
       {% include footer.html %}

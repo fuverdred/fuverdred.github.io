@@ -105,21 +105,21 @@ body {
 }
 
 .project {
-  margin: 15px 0px;
+  margin: 10px 0px;
   padding: 0px 5px;
+}
+
+.project p {
+  margin: 5px 0px;
+}
+
+img {
+  max-width: 90%;
 }
 
 code {
   border-width: 0;
   background-color: var(--clr-shaded);
-}
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
 }
 
 /* Larger than tablet */
@@ -128,9 +128,3 @@ code {
     font-size: 10.0rem;
   }
 }
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
