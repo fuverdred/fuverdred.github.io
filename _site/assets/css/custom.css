@@ -1,17 +1,61 @@
 
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
-  background-color: white;
+:root {
+  --clr-dark: #121212;
+  --clr-light: #fff;
+  --clr-shaded: #f2f2f2;
+  --clr-button: #ff00ff;
+  --clr-button-hover: #bfbfbf;
+  --clr-banner: #ff99ff;
+
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
 }
 
 .darkMode {
-  background-color: black;
-  color: white;
+  --clr-button: var(--clr-dark);
+  --clr-button-hover: #666666;
+  --clr-banner: #262626;
+  --clr-shaded: #1a1a1a;
+
+  --background: var(--clr-dark);
+  --foreground: var(--clr-light);
+}
+
+/*=== BANNER BUSINESS ===*/
+
+header {
+  height: 100vh;
+  background-color: var(--clr-banner);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+#down {
+  color: var(--foreground);
+  position: absolute;
+  top:85vh;
+  padding: 20px;
+  font-size: 2.5em;
+}
+
+#down:hover {
+  cursor: pointer;
+  background-color: var(--clr-banner);
+  opacity: 0.8;
+}
+
+#title {
+  font-size: 7.0rem;
 }
 
 #switches {
-  font-size: 5;
+  font-size: 2.0rem;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -24,3 +68,69 @@ body {
   height: auto;
   border: 0;
 }
+
+/*=== BODY BUSINESS ===*/
+
+body {
+  text-align: justify;
+  background-color: var(--background);
+  color: var(--foreground);
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.button {
+  color: var(--foreground);
+  background-color: transparent;
+  border-color: var(--foreground);
+  max-width: 20%;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.footer, .header {
+  margin: 0;
+  text-align: center;
+  padding: 10px 0px;
+  width: 100%;
+  background-color: var(--clr-banner);
+  flex: none;
+}
+
+.project {
+  margin: 15px 0px;
+  padding: 0px 5px;
+}
+
+code {
+  border-width: 0;
+  background-color: var(--clr-shaded);
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  #title {
+    font-size: 10.0rem;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

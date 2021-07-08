@@ -28,19 +28,3 @@ darkModeToggle.addEventListener("click", () => {
     disableDarkMode();
   }
 });
-
-
-
-var bool = true;
-/*
-function darkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-
-  bool = !bool;
-  var theme = bool ? "fa fa-toggle-off" : "fa fa-toggle-on";
-  var symbol = bool ? "fa fa-moon-o" : "fa fa-sun-o";
-  document.getElementById('light-switch').className = theme;
-  document.getElementById('light-symbol').className = symbol;
-}
-*/
