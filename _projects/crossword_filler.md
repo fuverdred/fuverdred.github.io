@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crossword Filler
+title: Themed Crossword Filler
 date: 2021-07-01
 github: https://github.com/fuverdred/Crossword-Filler
 ---
@@ -26,6 +26,8 @@ We will refer to these as the theme dictionary from now on. How many can be fitt
 ### Grid Choice
 
 The first question is which grid? It is tempting to think a custom grid could be made for any given set to optimise the number of fitted theme words. However, there are constraints on what a grid can look like. They must have some form of symmetry, at least two-fold rotational. The reason for symmetry is uncertain, but a symmetrical grid is certainly more pleasing to look at. In fact, the Guardian uses a set number of grids (~60 when not reducing for handedness/90 degree rotational symmetry).
+
+{% include crossword_grids/grid_59.html %}
 
 Limiting ourselves to these ~60 grids, it makes sense to only consider grids which have the most spaces matching the theme dictionary word lengths. Let's re-arrange the theme dictionary by word length using a ```defaultdict```.
 

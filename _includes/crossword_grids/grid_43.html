@@ -1,110 +1,3 @@
-<!doctype html>
-<html lang="en">
-    <head>
-
-      <!-- Basic Page Needs
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <meta charset="utf-8">
-      <title>Themed Crossword Filler</title>
-      <meta name="description" content="">
-      <meta name="author" content="">
-
-      <!-- Mobile Specific Metas
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <!-- FONT
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-
-      <!-- CSS
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <link rel="stylesheet" href="/assets/css/normalize.css">
-      <link rel="stylesheet" href="/assets/css/skeleton.css">
-      <link rel="stylesheet" href="/assets/css/custom.css">
-      <link rel="stylesheet" href="/assets/css/crossword.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-      <!-- Scripts
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    </head>
-
-    <body>
-      <div class="header">
-  <div id="switches">
-    <i id="light-symbol" class="fa fa-moon-o"></i>
-    <button id="light-switch" class="fa fa-toggle-off" aria-label="Toggle Dark Mode"></button>
-  </div>
-  <script src="/assets/javascript/darkmode.js"></script>
-  <a class="button" href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-</div>
-
-      <div class="container">
-        <h3>Themed Crossword Filler</h3>
-        
-          <a class="button" href="https://github.com/fuverdred/Crossword-Filler">Source <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-        
-        <p>It is common for the Guardian cryptic crossword to include a theme, sometimes clearly referred to, sometimes waiting to be discovered as the answers are filled in. For good examples see <a href="https://www.theguardian.com/crosswords/crosswords+profile/maskarade">Maskarade</a>. When I decided I wanted to set some themed crosswords I didn’t fancy spending ages filling out a grid with theme words by hand, let alone checking that once a theme word was in place, the rest of the grid could still be filled. As I couldn’t find a program to achieve this goal I wrote one.</p>
-
-<p>The best way to look at my current method is through an example. Take a theme of chocolate bars (in no particular order):</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>MARS</td>
-      <td>DOUBLEDECKER</td>
-    </tr>
-    <tr>
-      <td>DAIM</td>
-      <td>BOUNTY</td>
-    </tr>
-    <tr>
-      <td>MILKYWAY</td>
-      <td>YORKIE</td>
-    </tr>
-    <tr>
-      <td>GALAXY</td>
-      <td>TWIRL</td>
-    </tr>
-    <tr>
-      <td>AERO</td>
-      <td>BOURNEVILLE</td>
-    </tr>
-    <tr>
-      <td>FUDGE</td>
-      <td>LION</td>
-    </tr>
-    <tr>
-      <td>TOPIC</td>
-      <td>PICNIC</td>
-    </tr>
-    <tr>
-      <td>PENGUIN</td>
-      <td>BOOST</td>
-    </tr>
-    <tr>
-      <td>CHOMP</td>
-      <td>TOFFEE</td>
-    </tr>
-    <tr>
-      <td>CRISP</td>
-      <td>CRUNCH</td>
-    </tr>
-    <tr>
-      <td>NUTS</td>
-      <td>SNICKERS</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>We will refer to these as the theme dictionary from now on. How many can be fitted into a crossword grid, while still allowing the rest of the grid to be filled out with words.</p>
-
-<h3 id="grid-choice">Grid Choice</h3>
-
-<p>The first question is which grid? It is tempting to think a custom grid could be made for any given set to optimise the number of fitted theme words. However, there are constraints on what a grid can look like. They must have some form of symmetry, at least two-fold rotational. The reason for symmetry is uncertain, but a symmetrical grid is certainly more pleasing to look at. In fact, the Guardian uses a set number of grids (~60 when not reducing for handedness/90 degree rotational symmetry).</p>
-
 <table class="xw_grid">
   <tr>
     <td><div class="xw_light"></div></td>
@@ -113,41 +6,7 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-  </tr>
-  <tr>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-  </tr>
-  <tr>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
@@ -158,41 +17,6 @@
     <td><div class="xw_light"></div></td>
   </tr>
   <tr>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-  </tr>
-  <tr>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-  </tr>
-  <tr>
-    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
@@ -207,6 +31,7 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
   </tr>
   <tr>
     <td><div class="xw_light"></div></td>
@@ -216,8 +41,8 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
@@ -227,6 +52,75 @@
   </tr>
   <tr>
     <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+  </tr>
+  <tr>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+  </tr>
+  <tr>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+  </tr>
+  <tr>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+  </tr>
+  <tr>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_dark"></div></td>
@@ -234,12 +128,11 @@
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_dark"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
   </tr>
   <tr>
@@ -250,8 +143,8 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
@@ -260,40 +153,7 @@
     <td><div class="xw_light"></div></td>
   </tr>
   <tr>
-    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-  </tr>
-  <tr>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-  </tr>
-  <tr>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
@@ -308,7 +168,6 @@
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
   </tr>
   <tr>
     <td><div class="xw_light"></div></td>
@@ -320,7 +179,41 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+  </tr>
+  <tr>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+  </tr>
+  <tr>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
@@ -328,7 +221,6 @@
     <td><div class="xw_light"></div></td>
   </tr>
   <tr>
-    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
@@ -343,6 +235,7 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
     <td><div class="xw_light"></div></td>
+    <td><div class="xw_dark"></div></td>
   </tr>
   <tr>
     <td><div class="xw_light"></div></td>
@@ -350,10 +243,10 @@
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
+    <td><div class="xw_light"></div></td>
     <td><div class="xw_dark"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
-    <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
     <td><div class="xw_light"></div></td>
@@ -362,69 +255,3 @@
     <td><div class="xw_light"></div></td>
   </tr>
 </table>
-
-<p>Limiting ourselves to these ~60 grids, it makes sense to only consider grids which have the most spaces matching the theme dictionary word lengths. Let’s re-arrange the theme dictionary by word length using a <code class="highlighter-rouge">defaultdict</code>.</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>4</td>
-      <td>MARS, DAIM, AERO, LION, NUTS</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>TWIRL, FUDGE, TOPIC, BOOST, CHOMP, CRISP</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>BOUNTY, YORKIE, GALAXY, PICNIC, TOFFEE, CRUNCH</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>PENGUIN</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>MILKYWAY, SNICKERS</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>BOURNEVILLE</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>DOUBLEDECKER</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Then score each grid by multiplying the number of positions with length <em>n</em> by the number of words of length <em>n</em> in the theme dictionary. This is an easy way to find the grid with the most ways to fit the theme words in, increasing the chances of finding theme words which interlock with each other, increasing the density.</p>
-
-<h3 id="permutations">Permutations</h3>
-
-<p>How many possible ways are there to fit the theme dictionary into the grid? We can use permutations from combinatorics, <em><sup>n</sup>P<sub>r</sub></em>. As an example, let’s say we have two theme words which can fit into four possible positions in the grid. There are <em><sup>4</sup>P<sub>2</sub>=12</em> permutations if both positions are filled, plus <em><sup>4</sup>P<sub>1</sub>=4</em> permutations if only one positions is filled, plus the possibility of no positions being filled, for a total of 17 permutations. That last permutation may sound trivial, but it is relevant when filling out a whole grid, although one can be subtracted at the end, as an entirely empty grid is definitely not of interest. Also, if the above example were reversed and there were four possible theme words and two possible spaces the number of combinations remains the same.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>length |  words |    pos |  combs
--------+--------+--------+--------
-4      |      5 |      6 |   1237
-5      |      6 |      8 |  28961
-6      |      6 |      4 |    517
-7      |      1 |      4 |      5
-8      |      2 |      4 |     17
--------+--------+--------+--------
-TOTAL  | 1574318946365
-</code></pre></div></div>
-
-<p>There are ~1.6 trillion possible permutations. Of course, many of these would be invalid due to letter clashes, however a first approach would require checking them to find these clashes.</p>
-
-<h3 id="fitting">Fitting</h3>
-
-<p>Programs to fill crossword grids can work by letter or by word. Working by letter makes sense when using a large dictionary, as individual letters at intersecting points determine the number of possible words which will fit. However, in the case of a small dictionary it makes the most sense to fit by word. Although, optimisations can be made by caching which letters have already been tried at intersecting positions.</p>
-
-      </div>
-      <div class = "footer">
-  Fred Cook | Built on <a href="http://getskeleton.com/">Skeleton</a>
-</div>
-
-    </body>
-  </html>

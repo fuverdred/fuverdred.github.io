@@ -26,6 +26,7 @@
       <link rel="stylesheet" href="/assets/css/normalize.css">
       <link rel="stylesheet" href="/assets/css/skeleton.css">
       <link rel="stylesheet" href="/assets/css/custom.css">
+      <link rel="stylesheet" href="/assets/css/crossword.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <!-- Scripts
@@ -39,7 +40,7 @@
       <div class="container">
         <h3>{{ page.title }}</h3>
         {% if page.github %}
-        <a href="{{ page.github }}"><h4>Find the code here <i class="fa fa-github fa-lg" aria-hidden="true"></i></h4></a>
+          <a class="button" href="{{ page.github }}">Source <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
         {% endif %}
         {{ content }}
       </div>

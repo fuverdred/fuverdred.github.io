@@ -1,0 +1,54 @@
+.xw_grid {
+  display: block;
+  width: 312px;
+  border-collapse: collapse;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--clr-shaded);
+  border: 1px;
+  border-color: black;
+}
+
+.xw_grid td, .xw_grid tr {
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 0px;
+}
+
+/* Correcting for the borders all being double within the
+core of the grid*/
+.xw_grid tr:first-child {
+  border-top: 1px solid black;}
+.xw_grid tr:last-child {
+  border-bottom: 1px solid black;}
+.xw_grid th:first-child,
+.xw_grid td:first-child{
+  border-left: 1px solid black; }
+.xw_grid th:last-child,
+.xw_grid td:last-child {
+  border-right: 1px solid black; }
+
+.xw_dark {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: black;
+  height: 20px;
+  width: 20px;
+  border: none;
+}
+
+.xw_light {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: white;
+  height: 20px;
+  width: 20px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}

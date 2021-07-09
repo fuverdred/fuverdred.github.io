@@ -48,7 +48,7 @@ hr {
 
 .duration {
   margin-top: 1px;
-  padding: 1px;
+  padding: 1px 0px;
   background-color: black;
   color: white;
   text-align: center;
