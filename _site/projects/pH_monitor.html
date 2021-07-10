@@ -46,7 +46,34 @@
         
           <a class="button" href="https://github.com/fuverdred/pH-Monitor">Source <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
         
-        <p>The pH of the medium a plant is grown in can have a large impact on its growth. This device is a simple pH controller for a hydroponic plant set up.</p>
+        <p>
+The pH of the medium a plant is grown in can have a large impact on its growth. This device is a simple pH controller for a hydroponic plant set up.
+</p>
+
+<p>
+The brain of the operation is a PyBoard microcontroller. Any microcontroller would do, but I prefer them to your typical arduino uno/nano for several reasons. First I am most comfortable in python, and can get more done quickly, second it has a built in SD card for data storage, third, and most importantly, it has a REPL. The REPL allows instance access  to the peripherals, making prototyping, testing and bug-hunting much easier.
+</p>
+
+<img class = "BandW" src="/assets/images/pH_controller/pH_monitor_label.svg" alt="pH Controller diagram">
+
+<h5>Parts List</h5>
+The schematic above shows the rough layout.
+<ul>
+  <li>PyBoard 1.1</li>
+  <li>Peristaltic Pumps x2</li>
+  <li>pH-meter</li>
+  <li>L298N Stepper motor driver</li>
+  <li>Wires</li>
+  <li>Power supply (~10V)</li>
+  <li>LCD screen (optional)</li>
+  <li>Buttons (optional)</li>
+</ul>
+
+<p>
+I found all of these parts on ebay for a total less than £50. I have avoided exact part names here because they don't matter, but feel free to send me an email for further guidance. To keep things neat you will also want a box to put them in, I 3D printed one, but any box you can cut some holes in will do.
+</p>
+
+<img style="width: 50%" src="/assets/images/pH_controller/pH_controller.jpg" alt="pH controller Photo">
 
       </div>
       <div class = "footer">

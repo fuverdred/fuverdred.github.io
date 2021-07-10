@@ -11,6 +11,8 @@
 
   --foreground: var(--clr-dark);
   --background: var(--clr-light);
+
+  --inversion: 0; // Don't invert B&W images in light mode
 }
 
 .darkMode {
@@ -21,6 +23,8 @@
 
   --background: var(--clr-dark);
   --foreground: var(--clr-light);
+
+  --inversion: 1; // Invert B&W images in light mode
 }
 
 /*=== BANNER BUSINESS ===*/
@@ -114,7 +118,15 @@ body {
 }
 
 img {
+  display: block;
   max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Invert black and white images in dark mode*/
+.BandW {
+  filter: invert(var(--inversion));
 }
 
 code {
