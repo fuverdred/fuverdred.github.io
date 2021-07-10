@@ -16,7 +16,6 @@ The brain of the operation is a PyBoard microcontroller. Any microcontroller wou
 <img class = "BandW" src="/assets/images/pH_controller/pH_monitor_label.svg" alt="pH Controller diagram">
 
 <h5>Parts List</h5>
-The schematic above shows the rough layout.
 <ul>
   <li>PyBoard 1.1</li>
   <li>Peristaltic Pumps x2</li>
@@ -26,6 +25,7 @@ The schematic above shows the rough layout.
   <li>Power supply (~10V)</li>
   <li>LCD screen (optional)</li>
   <li>Buttons (optional)</li>
+  <li>DHT11 Temperature and humidity sensor</li>
 </ul>
 
 <p>
@@ -33,3 +33,23 @@ I found all of these parts on ebay for a total less than £50. I have avoided ex
 </p>
 
 <img style="width: 50%" src="/assets/images/pH_controller/pH_controller.jpg" alt="pH controller Photo">
+
+<p>
+The screen and buttons aren't essential, however, they are useful for checking it is working as intended, and allowing users who can't code to keep the pH meter calibrated. I also included a cheap and cheerful temperature/humidity sensor, so the data can also be tracked along with the pH.
+</p>
+
+<p>
+The L298N stepper motor driver is an absolute workhorse. It allows the whole set-up to be powered from one supply, as it will step down 10V to 5V to run the pyBoard, as well as allowing control of the higher voltage peristaltic pumps. In terms of putting the whole thing together I would suggest an incremental approach. Add each component one at a time, and use the REPL to check they are working as expected. As can be seen below the wiring can turn into a bit of a rats nest, so adding them one at a time ensures no crossed wires. The pin outs can all be found in <code>main.py</code>.
+</p>
+
+<img style="width: 50%" src="/assets/images/pH_controller/pH_wires.jpg" alt="pH meter internals">
+
+<p>
+The code in the github link above should be used more as a guideline for your particular set-up. Test everything thoroughly before you actually use it! One final note: I would recommend putting <a href="https://en.wikipedia.org/wiki/Flyback_diode">freewheeling diodes</a> across your peristaltic pumps.
+</p>
+
+<h5>Future Improvements</h5>
+<ul>
+  <li>Currently the feedback always provides the same amount of fluid from each reservoir at each test interval. However, PID control could be implemented to maintain a better pH balance.</li>
+  <li>Using a time triggered call back instead of a continuous counting loop would allow the device to run more efficiently power-wise.</li>
+</ul>
