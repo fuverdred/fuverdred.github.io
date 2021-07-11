@@ -5,7 +5,7 @@
   --clr-dark: #121212;
   --clr-light: #fff;
   --clr-shaded: #f2f2f2;
-  --clr-button: #ff00ff;
+  --clr-button: #ffb3ff;
   --clr-button-hover: #bfbfbf;
   --clr-banner: #ff99ff;
 
@@ -97,6 +97,10 @@ body {
 
 .button:hover {
   opacity: 0.8;
+}
+
+.button-primary {
+  background-color: yellow;
 }
 
 .footer, .header {
