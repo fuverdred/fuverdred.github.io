@@ -25,7 +25,7 @@ The brain of the operation is a PyBoard microcontroller. Any microcontroller wou
   <li>Power supply (~10V)</li>
   <li>LCD screen (optional)</li>
   <li>Buttons (optional)</li>
-  <li>DHT11 Temperature and humidity sensor</li>
+  <li>DHT11 Temperature and humidity sensor (optional)</li>
 </ul>
 
 <p>
@@ -47,6 +47,13 @@ The L298N stepper motor driver is an absolute workhorse. It allows the whole set
 <p>
 The code in the github link above should be used more as a guideline for your particular set-up. Test everything thoroughly before you actually use it! One final note: I would recommend putting <a href="https://en.wikipedia.org/wiki/Flyback_diode">freewheeling diodes</a> across your peristaltic pumps.
 </p>
+
+<h5>Calibration</h5>
+<p>
+You can calibrate the pH meter with just two points, however I wanted to do three to confirm the response was linear in the region of interest. The result is shown in the graph below (sorry there are no error bars). Fitting the data points gives a gradient of 157 and a y-intercept of 1185. The "units" on the y-axis are just the straight analog read value, a number between 0 and 4095 (12 bits of resolution). Re-arranging to make x the subject of the equation provides the pH of the reservoir as a function of the measured voltage.
+</p>
+
+<img class="BandW" src="/assets/images/pH_controller/calib_graph.png" alt="Calibration Graph">
 
 <h5>Future Improvements</h5>
 <ul>
