@@ -10,9 +10,9 @@ title: Fred Cook
   </div>
   <h1 id="title">Fred Cook</h1>
   <div style="flex-direction: row">
-    <a style="width:30px" class="button" href="https://github.com/fuverdred"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-    <a style="width:30px" class="button" href="/CV.html">CV</a>
-    <a style="width:30px" class="button" href="mailto:fred@fredcook.co.uk"><i class="fa fa-envelope"></i></a>
+    <a style="font-size: 3.0rem" class="button" href="https://github.com/fuverdred"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    <a style="font-size: 3.0rem" class="button" href="/CV.html">CV</a>
+    <a style="font-size: 3.0rem" class="button" href="mailto:fred@fredcook.co.uk"><i class="fa fa-envelope"></i></a>
   </div>
   <a href="#"></a>
   <a href="#about" id="down">
@@ -29,12 +29,14 @@ title: Fred Cook
     {% for proj in projects limit:3 %}
       <div class="project">
         <h5>{{ proj.title }}</h5>
-        <p>{{ proj.excerpt }}</p>
-        <a class="button" href=" {{proj.url}} ">Read more</a>
+        {{ proj.excerpt }}
+        <div style="height: 30px">
+          <a class="button u-pull-right" href=" {{proj.url}} ">Read more</a>
+        </div>
       </div>
     {% endfor %}
     <div style="text-align: center">
-      <a class="button button-primary" href="/projects">More projects...</a>
+      <a class="button" href="/projects">More projects...</a>
     </div>
   </div>
 </div>
