@@ -1,84 +1,7 @@
-
-/* Shared
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-:root {
-  --clr-dark: #121212;
-  --clr-light: #fff;
-  --clr-shaded: #f2f2f2;
-  --clr-button: #ffb3ff;
-  --clr-button-hover: #bfbfbf;
-  --clr-banner: #ff99ff;
-
-  --foreground: var(--clr-dark);
-  --background: var(--clr-light);
-
-  --inversion: 0; // Don't invert B&W images in light mode
-}
-
-.darkMode {
-  --clr-button: var(--clr-dark);
-  --clr-button-hover: #666666;
-  --clr-banner: #262626;
-  --clr-shaded: #1a1a1a;
-
-  --background: var(--clr-dark);
-  --foreground: var(--clr-light);
-
-  --inversion: 1; // Invert B&W images in light mode
-}
-
-/*=== BANNER BUSINESS ===*/
-
-header {
-  height: 100vh;
-  background-color: var(--clr-banner);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  margin-bottom: 30px;
-}
-
-#down {
-  color: var(--foreground);
-  position: absolute;
-  top:85vh;
-  padding: 20px;
-  font-size: 2.5em;
-}
-
-#down:hover {
-  cursor: pointer;
-  background-color: var(--clr-banner);
-  opacity: 0.8;
-}
-
-#title {
-  font-size: 7.0rem;
-}
-
-#switches {
-  font-size: 2.0rem;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-#light-switch {
-  padding: 0;
-  margin: 0;
-  color: gray;
-  height: auto;
-  border: 0;
-}
-
-/*=== BODY BUSINESS ===*/
-
 body {
   text-align: justify;
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--clr-background, red);
+  color: var(--clr-foreground);
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -89,9 +12,9 @@ body {
 }
 
 .button {
-  color: var(--foreground);
+  color: var(--clr-foreground);
   background-color: transparent;
-  border-color: var(--foreground);
+  border-color: var(--clr-foreground);
   max-width: 20%;
 }
 
@@ -108,7 +31,7 @@ body {
   text-align: center;
   padding: 10px 0px;
   width: 100%;
-  background-color: var(--clr-banner);
+  background-color: var(--clr-primary);
   flex: none;
 }
 
@@ -128,19 +51,7 @@ img {
   margin-right: auto;
 }
 
-/*Invert black and white images in dark mode*/
-.BandW {
-  filter: invert(var(--inversion));
-}
-
 code {
   border-width: 0;
   background-color: var(--clr-shaded);
-}
-
-/* Larger than tablet */
-@media (min-width: 750px) {
-  #title {
-    font-size: 10.0rem;
-  }
 }

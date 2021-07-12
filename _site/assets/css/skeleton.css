@@ -159,9 +159,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: var(--clr-link); }
 a:hover {
-  color: #0FA0CE; }
+  color: var(--clr-link-hover); }
 
 
 /* Buttons
@@ -171,13 +171,10 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: inline;
-  height: 38px;
-  padding: 5px 30px;
+  padding: 5px 10px;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 38px;
   letter-spacing: .1rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -186,7 +183,7 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid;
   cursor: pointer;
-  box-sizing: border-box; }
+  box-sizing: content-box;}
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -197,17 +194,15 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: var(--clr-foreground);
+  border-color: var(--clr-foreground);
   outline: 0; }
 .button.button-primary,
 button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  background-color: #ffb3ff;
-  color: #FFF;
-  border-color: #FFF; }
+  background-color: var(--clr-highlight); }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -218,72 +213,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #ff66ff;
-  border-color: #FFF; }
-
-
-/* Forms
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea,
-select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
-/* Removes awkward default styles on some inputs for iOS */
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
-textarea {
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus {
-  border: 1px solid #33C3F0;
-  outline: 0; }
-label,
-legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
-fieldset {
-  padding: 0;
-  border-width: 0; }
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline; }
-label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal; }
-
+  background-color: var(--clr-highlight-2); }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -298,7 +228,7 @@ ul ul,
 ul ol,
 ol ol,
 ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
+  margin: 0.5rem 0 0.5rem 3rem;
   font-size: 90%; }
 li {
   margin-bottom: 1rem; }
@@ -311,8 +241,8 @@ code {
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
-  background: #F1F1F1;
-  border: 1px solid #E1E1E1;
+  background: var(--clr-shaded);
+  border: 1px solid var(--clr-shaded);
   border-radius: 4px; }
 pre > code {
   display: block;
@@ -324,9 +254,8 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  padding: 2px 5px;
+  text-align: left; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -354,7 +283,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 0.1rem; }
 
 
 /* Utilities
@@ -374,11 +303,8 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #E1E1E1; }
-
+  margin: 0;
+  border: 1px solid var(--clr-foreground);}
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

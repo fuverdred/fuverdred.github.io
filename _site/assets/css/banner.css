@@ -1,0 +1,50 @@
+.banner {
+  height: 100vh;
+  background-color: var(--clr-primary);
+  color: var(--clr-foreground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+#down {
+  color: var(--clr-foreground);
+  position: absolute;
+  top:85vh;
+  padding: 20px;
+  font-size: 2.5em;
+}
+
+#down:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#title {
+  font-size: 7.0rem;
+}
+
+#switches {
+  font-size: 2.0rem;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+#light-switch {
+  padding: 0;
+  margin: 0;
+  color: gray;
+  height: auto;
+  border: 0;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  #title {
+    font-size: 10.0rem;
+  }
+}
