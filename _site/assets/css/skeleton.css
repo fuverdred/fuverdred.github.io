@@ -131,7 +131,11 @@ body {
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 {
   text-align: left;
   margin-top: 0;
   margin-bottom: 2rem;
