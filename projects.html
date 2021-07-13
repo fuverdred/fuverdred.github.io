@@ -10,7 +10,7 @@ title: Projects | Fred Cook
   {% assign projects = site.projects_collection | reverse %}
   {% for proj in projects limit:3 %}
     <div class="project">
-      <a href="{{proj.url}}"><h5>{{ proj.title }}</h5></a>
+      <h5>{{ proj.date | date: "%d %b %y" }} | <a href="{{proj.url}}">{{ proj.title }}</a></h5>
       {% if proj.img %}
         <div class="row">
             <div class="nine columns">
@@ -27,7 +27,7 @@ title: Projects | Fred Cook
     </div>
   {% endfor %}
   {% for proj in projects offset:3 %}
-    <a href="{{proj.url}}"><h5>{{ proj.title }}</h5></a>
+    <h5>{{ proj.date | date: "%d %b %y" }} | <a href="{{proj.url}}">{{ proj.title }}</a></h5>
   {% endfor %}
 
 </div>
