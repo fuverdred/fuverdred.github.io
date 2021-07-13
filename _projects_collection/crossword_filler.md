@@ -3,6 +3,7 @@ layout: post
 title: Themed Crossword Filler
 date: 2020-07-11
 github: https://github.com/fuverdred/Crossword-Filler
+img: "/assets/images/themed_crossword_filler/grid.png"
 ---
 
 It is common for the Guardian cryptic crossword to include a theme, sometimes clearly referred to, sometimes waiting to be discovered as the answers are filled in. For good examples see [Maskarade](https://www.theguardian.com/crosswords/crosswords+profile/maskarade). When I decided I wanted to set some themed crosswords I didn't fancy spending ages filling out a grid with theme words by hand, let alone checking that once a theme word was in place, the rest of the grid could still be filled. As I couldn't find a program to achieve this goal I wrote one.

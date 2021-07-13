@@ -7,12 +7,27 @@ title: Projects | Fred Cook
 <div class="container">
   <h1>Projects</h1>
 
-  {% for proj in site.projects_collection reversed %}
+  {% assign projects = site.projects_collection | reverse %}
+  {% for proj in projects limit:3 %}
     <div class="project">
-      <h5>{{ proj.title }}</h5>
-      <p>{{ proj.excerpt }}</p>
-      <a class="button" href=" {{proj.url}} ">Read more</a>
+      <a href="{{proj.url}}"><h5>{{ proj.title }}</h5></a>
+      {% if proj.img %}
+        <div class="row">
+            <div class="nine columns">
+              <p>{{ proj.excerpt }}</p>
+            </div>
+            <img class="project_icon three columns" src="{{proj.img}}" alt="">
+        </div>
+      {% else %}
+        <p>{{ proj.excerpt }}</p>
+      {% endif %}
+      <div style="overflow:auto; padding: 5px">
+        <a class="button u-pull-right" href=" {{proj.url}} ">Read more</a>
+      </div>
     </div>
+  {% endfor %}
+  {% for proj in projects offset:3 %}
+    <a href="{{proj.url}}"><h5>{{ proj.title }}</h5></a>
   {% endfor %}
 
 </div>
