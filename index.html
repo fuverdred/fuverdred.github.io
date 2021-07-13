@@ -1,0 +1,45 @@
+---
+layout: default
+title: Fred Cook
+---
+
+<div class="banner">
+  <div id="switches">
+    <i id="light-symbol" class="fa fa-moon-o"></i>
+    <button id="light-switch" class="fa fa-toggle-off" aria-label="Toggle Dark Mode"></button>
+  </div>
+  <h1 id="title">Fred Cook</h1>
+  <div style="flex-direction: row">
+    <a style="font-size: 3.0rem" class="button" href="https://github.com/fuverdred"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    <a style="font-size: 3.0rem" class="button" href="/CV.html">CV</a>
+    <a style="font-size: 3.0rem" class="button" href="mailto:fred@fredcook.co.uk"><i class="fa fa-envelope"></i></a>
+  </div>
+  <a href="#"></a>
+  <a href="#about" id="down">
+    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+  </a>
+</div>
+
+<div class="container">
+  <h3 id="about">About</h3>
+  <p>Having finished a physics PhD I am looking to move into software development. Currently most proficient in Python, but with a background in C and learning Clojure.</p>
+  <div class="projects">
+    <h3>Projects</h3>
+    {% assign projects = site.projects_collection | reverse %}
+    {% for proj in projects limit:3 %}
+      <div class="project">
+        <h5>{{ proj.title }}</h5>
+        {{ proj.excerpt }}
+        <div style="overflow:auto;">
+          <a class="button u-pull-right" href=" {{proj.url}} ">Read more</a>
+        </div>
+      </div>
+    {% endfor %}
+    <div style="text-align: center">
+      <a class="button" href="/projects">More projects...</a>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/javascript/scroller.js"></script>
+{% include footer.html %}

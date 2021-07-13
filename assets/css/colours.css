@@ -1,0 +1,32 @@
+:root {
+  --clr-background: #FFF;
+  --clr-foreground: #000;
+  --clr-shaded: #e6e6e6;
+
+  --clr-primary: #ff6cf1;
+  --clr-secondary: #ffb3f7;
+  --clr-highlight: #ffb3ff;
+  --clr-highlight-2: #bfbfbf;
+  --clr-link: #1EAEDB;
+  --clr-link-hover: #0FA0CE;
+
+  --inversion: 0; // Don't invert B&W images in light mode
+}
+
+.darkMode {
+  --clr-background: #0d0d0d;
+  --clr-foreground: #FFF;
+  --clr-shaded: #303436;
+
+  --clr-primary:  	#17191a;
+  --clr-secondary: #303436;
+  --clr-highlight: #ff6cf1;
+  --clr-highlight-2: #ffb3f7;
+
+  --inversion: 1; // Invert B&W images in light mode
+}
+
+/*Invert black and white images in dark mode*/
+.BandW {
+  filter: invert(var(--inversion));
+}
