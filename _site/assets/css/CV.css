@@ -9,6 +9,8 @@
 .A4_page h5,
 .A4_page h6,
 .A4_page p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0; }
