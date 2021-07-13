@@ -1,4 +1,1 @@
-# Ignore everything
-*
-
-!/_site
+_site/
