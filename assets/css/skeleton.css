@@ -196,7 +196,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: var(--clr-foreground);
+    color: var(--clr-foreground);
+    background-color: var(--clr-highlight);
   border-color: var(--clr-foreground);
   outline: 0; }
 .button.button-primary,
