@@ -12,7 +12,7 @@ body {
   text-align: center;
   padding: 10px 0px;
   width: 100%;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-secondary);
   flex: none;
 }
 
@@ -23,12 +23,17 @@ body {
 
 img {
   display: block;
-  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .project_icon {
+  margin-top: 1em;
+  margin-right: 5px;
+  max-width:200px;
+  max-height:200px;
+  width: auto;
+  height: auto;
   background-color: white;
   box-sizing: border-box;
   border: 2px solid black;

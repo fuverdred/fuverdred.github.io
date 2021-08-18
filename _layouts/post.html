@@ -1,24 +1,10 @@
 ---
-layout: default
+layout: sidebar
 ---
 {% include switch.html %}
-<div class="sidebar">
-  <a href="/"><h5>Fred Cook</h5></a>
-  <div id="icons">
-    <a href="https://github.com/fuverdred"><i class="fa fa-github fa-lg"></i></a>
-    <a href="mailto:fred@fredcook.co.uk"><i class="fa fa-envelope"></i></a>
-  </div>
-  <div class="please_align">
-    <a href="/CV"><h6>CV</h6></a>
-    <a href="/projects"><h6>Projects</h6></a>
-  </div>
-</div>
 
-<div class="content">
-  <h3>{{ page.title }}</h3>
-  {% if page.github %}
-    <a class="button" href="{{ page.github }}">Source <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-  {% endif %}
-  {{ content }}
-</div>
-{% include footer.html %}
+<h3>{{ page.title }}</h3>
+{% if page.github %}
+  <a class="button" href="{{ page.github }}">Source <i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+{% endif %}
+{{ content }}

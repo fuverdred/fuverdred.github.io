@@ -1,35 +1,32 @@
 ---
-layout: default
+layout: sidebar
 title: Projects | Fred Cook
 ---
-{% include header.html %}
 
-<div class="container">
-  <h1>Projects</h1>
 
-  {% assign projects = site.projects_collection | reverse %}
-  {% for proj in projects limit:3 %}
-    <div class="project">
-      <h5>{{ proj.date | date: "%d %b %y" }} | <a href="{{proj.url}}">{{ proj.title }}</a></h5>
-      {% if proj.img %}
-        <div class="row">
-            <div class="nine columns">
-              <p>{{ proj.excerpt }}</p>
-            </div>
-            <img class="project_icon three columns" src="{{proj.img}}" alt="">
-        </div>
-      {% else %}
-        <p>{{ proj.excerpt }}</p>
-      {% endif %}
-      <div style="overflow:auto; padding: 5px">
-        <a class="button u-pull-right" href=" {{proj.url}} ">Read more</a>
-      </div>
-    </div>
-  {% endfor %}
-  {% for proj in projects offset:3 %}
+<h1>Projects</h1>
+
+{% assign projects = site.projects_collection | reverse %}
+{% for proj in projects limit:3 %}
+  <div class="project">
     <h5>{{ proj.date | date: "%d %b %y" }} | <a href="{{proj.url}}">{{ proj.title }}</a></h5>
-  {% endfor %}
-
-</div>
-
-{% include footer.html %}
+    {% if proj.img %}
+      <div class="row">
+          <div class="nine columns">
+            <p>{{ proj.excerpt }}</p>
+          </div>
+          <div class="three columns">
+            <img class="project_icon" src="{{proj.img}}" alt="">
+          </div>
+      </div>
+    {% else %}
+      <p>{{ proj.excerpt }}</p>
+    {% endif %}
+    <div style="overflow:auto; padding: 5px">
+      <a class="button u-pull-right" href=" {{proj.url}} ">Read more</a>
+    </div>
+  </div>
+{% endfor %}
+{% for proj in projects offset:3 %}
+  <h5>{{ proj.date | date: "%d %b %y" }} | <a href="{{proj.url}}">{{ proj.title }}</a></h5>
+{% endfor %}
