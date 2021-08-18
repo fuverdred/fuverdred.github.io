@@ -6,42 +6,39 @@
 }
 
 .sidebar {
-  margin: 0;
-  padding: 10px;
-  width: var(--sidebar-wdith);
+  padding: 0px;
+  width: var(--sidebar-width);
   background-color: var(--clr-primary);
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 
+.sidebar h6,
 .sidebar h5 {
-    margin: 0px;
+  padding: 0;
+  margin: 0;
 }
-
 .sidebar a {
-  padding: 5px 10px;
-  margin: 0px 20px;
+  padding: 0px 10px;
+  margin: 10px 0px;
+  display: block;
   color: var(--clr-foreground);
   text-decoration: none;
 }
 
 #icons {
-    text-align: center;
-}
-
-#icons a{
-    display: block;
-    padding: 5px;
-    margin: 0px 10px;
-}
-
-.sidebar a:hover {
-    background-color: var(--clr-secondary);
+  padding: 0px 20px;
 }
 
 #icons a {
     display: inline;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.sidebar a:hover {
+    background-color: var(--clr-secondary);
 }
 
 /* If there is a side bar present put the main content of the page in .content */
@@ -54,23 +51,25 @@ div.content {
 }
 
 @media screen and (max-width: 700px) {
-    .sidebar {
-	display: flex;
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-      float: left;
-      padding: 0px;
-      margin: 0;
-      line-height: 2.5em;
-  }
-  #icons {
-      display: none;
-  }
-  div.content {
-      margin-left: 10px;
-      margin-right: 10px;
-  }
+  .sidebar {
+      	display: flex;
+      	width: 100%;
+      	height: auto;
+      	position: relative;
+    }
+    .sidebar h6 {
+      /*Align with h5*/
+      padding-top: 0.5em;
+    }
+    .sidebar a {
+      	float: left;
+        border-radius: 15px;
+    }
+    #icons {
+	      display: none;
+    }
+    div.content {
+      	margin-left: 10px;
+      	margin-right: 10px;
+    }
 }
