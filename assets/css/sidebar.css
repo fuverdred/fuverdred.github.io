@@ -1,0 +1,76 @@
+:root {
+    --sidebar-width: 150px;
+    --margin-left: 200px;
+    /*margin-right = margin-left - sidebar-width*/
+    --margin-right: 50px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 10px;
+  width: var(--sidebar-wdith);
+  background-color: var(--clr-primary);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar h5 {
+    margin: 0px;
+}
+
+.sidebar a {
+  padding: 5px 10px;
+  margin: 0px 20px;
+  color: var(--clr-foreground);
+  text-decoration: none;
+}
+
+#icons {
+    text-align: center;
+}
+
+#icons a{
+    display: block;
+    padding: 5px;
+    margin: 0px 10px;
+}
+
+.sidebar a:hover {
+    background-color: var(--clr-secondary);
+}
+
+#icons a {
+    display: inline;
+}
+
+/* If there is a side bar present put the main content of the page in .content */
+div.content {
+  margin-top: 35px;
+  margin-left: var(--margin-left);
+  margin-right: var(--margin-right);
+  padding: 5px 16px;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+	display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+      float: left;
+      padding: 0px;
+      margin: 0;
+      line-height: 2.5em;
+  }
+  #icons {
+      display: none;
+  }
+  div.content {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
