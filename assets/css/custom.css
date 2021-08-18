@@ -1,6 +1,6 @@
 body {
   text-align: justify;
-  background-color: var(--clr-background, red);
+  background-color: var(--clr-background);
   color: var(--clr-foreground);
   display: flex;
   min-height: 100vh;

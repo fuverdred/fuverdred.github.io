@@ -10,7 +10,7 @@
   --clr-link: #1EAEDB;
   --clr-link-hover: #0FA0CE;
 
-  --inversion: 0; // Don't invert B&W images in light mode
+  --inversion: 0; // Dont invert B&W images in light mode
 }
 
 .darkMode {
