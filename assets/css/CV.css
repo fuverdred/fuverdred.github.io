@@ -16,6 +16,10 @@
   margin-bottom: 0;
   padding-top: 0; }
 
+.A4_page li {
+  margin-left: 10px;
+}
+
 .duration {
   margin-top: 1px;
   padding: 1px 0px;
