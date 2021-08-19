@@ -40,7 +40,8 @@
 
 /* If there is a side bar present put the main content of the page in .content */
 div.content {
-  margin-top: 10px;
+  min-height: 100%;
+  padding-top: 10px;
   margin-left: var(--sidebar-width);
   padding: 5px 16px;
   max-width: 1000px;
