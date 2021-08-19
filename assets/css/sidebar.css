@@ -1,8 +1,5 @@
 :root {
     --sidebar-width: 150px;
-    --margin-left: 200px;
-    /*margin-right = margin-left - sidebar-width*/
-    --margin-right: 50px;
 }
 
 .sidebar {
@@ -44,10 +41,9 @@
 /* If there is a side bar present put the main content of the page in .content */
 div.content {
   margin-top: 10px;
-  margin-left: var(--margin-left);
-  margin-right: var(--margin-right);
+  margin-left: var(--sidebar-width);
   padding: 5px 16px;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 @media screen and (max-width: 550px) {
