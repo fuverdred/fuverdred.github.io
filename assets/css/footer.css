@@ -1,0 +1,14 @@
+:root {
+  --footer-height: 34px;
+}
+
+.footer{
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  padding: 5px 0px;
+  height: var(--footer-height);
+  width: 100%;
+  background-color: var(--clr-secondary);
+  flex: none;
+}

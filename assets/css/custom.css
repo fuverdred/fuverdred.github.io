@@ -7,15 +7,6 @@ body {
   flex-direction: column;
 }
 
-.footer, .header {
-  margin: 0;
-  text-align: center;
-  padding: 10px 0px;
-  width: 100%;
-  background-color: var(--clr-secondary);
-  flex: none;
-}
-
 .project {
   margin: 20px 0px;
   padding: 0px 5px;

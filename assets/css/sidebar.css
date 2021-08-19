@@ -1,5 +1,6 @@
 :root {
     --sidebar-width: 150px;
+    --header-height: 56px;
 }
 
 .sidebar {
@@ -40,12 +41,14 @@
 
 /* If there is a side bar present put the main content of the page in .content */
 div.content {
-  min-height: 100%;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--footer-height));
   padding-top: 10px;
   margin-left: var(--sidebar-width);
-  padding: 5px 16px;
+  padding: 5px 16px var(--footer-height) 16px;
   max-width: 1000px;
 }
+
 
 @media screen and (max-width: 550px) {
   .sidebar h5 {
@@ -57,7 +60,7 @@ div.content {
   .sidebar {
       	display: flex;
       	width: 100%;
-      	height: auto;
+      	height: var(--header-height);
       	position: relative;
     }
     .sidebar h6 {
@@ -72,6 +75,7 @@ div.content {
 	      display: none;
     }
     div.content {
+        min-height: calc(100vh - 56px);
       	margin-left: 10px;
       	margin-right: 10px;
     }
