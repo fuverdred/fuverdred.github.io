@@ -42,7 +42,7 @@
 /* If there is a side bar present put the main content of the page in .content */
 div.content {
   box-sizing: border-box;
-  min-height: calc(100vh - var(--footer-height));
+  min-height: 100vh;
   padding-top: 10px;
   margin-left: var(--sidebar-width);
   padding: 5px 16px var(--footer-height) 16px;
@@ -75,7 +75,7 @@ div.content {
 	      display: none;
     }
     div.content {
-        min-height: calc(100vh - 56px);
+        min-height: calc(100vh - var(--header-height));
       	margin-left: 10px;
       	margin-right: 10px;
     }

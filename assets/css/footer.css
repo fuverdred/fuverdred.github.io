@@ -8,6 +8,7 @@
   text-align: center;
   padding: 5px 0px;
   height: var(--footer-height);
+  margin-top: calc(-1 * var(--footer-height));
   width: 100%;
   background-color: var(--clr-secondary);
   flex: none;
